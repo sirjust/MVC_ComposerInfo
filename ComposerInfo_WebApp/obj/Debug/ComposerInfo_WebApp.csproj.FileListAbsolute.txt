@@ -64,7 +64,6 @@ C:\Users\SirJUST\source\repos\ComposerInfo_WebApp\ComposerInfo_WebApp\bin\Micros
 C:\Users\SirJUST\source\repos\ComposerInfo_WebApp\ComposerInfo_WebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\SirJUST\source\repos\ComposerInfo_WebApp\ComposerInfo_WebApp\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\SirJUST\source\repos\ComposerInfo_WebApp\ComposerInfo_WebApp\bin\Newtonsoft.Json.dll
-C:\Users\SirJUST\source\repos\ComposerInfo_WebApp\ComposerInfo_WebApp\bin\System.Diagnostics.DiagnosticSource.dll
 C:\Users\SirJUST\source\repos\ComposerInfo_WebApp\ComposerInfo_WebApp\bin\System.Web.Helpers.dll
 C:\Users\SirJUST\source\repos\ComposerInfo_WebApp\ComposerInfo_WebApp\bin\System.Web.Mvc.dll
 C:\Users\SirJUST\source\repos\ComposerInfo_WebApp\ComposerInfo_WebApp\bin\System.Web.Optimization.dll

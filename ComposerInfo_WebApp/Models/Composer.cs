@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
 
 namespace ComposerInfo_WebApp.Models
 {
     public class Composer
     {
+        [Key]
         public int ComposerID { get; set; }
+
         public string FirstName { get; set; } 
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }

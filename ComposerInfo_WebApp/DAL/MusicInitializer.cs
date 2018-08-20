@@ -7,7 +7,9 @@ using ComposerInfo_WebApp.Models;
 
 namespace ComposerInfo_WebApp.DAL
 {
-    public class MusicInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<MusicContext>
+    // we get an error if we force it to drop and create, it says it is in use
+
+    public class MusicInitializer : DropCreateDatabaseIfModelChanges<MusicContext>
     {
         protected override void Seed(MusicContext context)
         {
@@ -25,19 +27,19 @@ namespace ComposerInfo_WebApp.DAL
 
             var operas = new List<Opera>
             {
-                new Opera{Name="Le nozze di Figaro", Language="Italian", PremierDate=DateTime.Parse("05/01/1786")},
-                new Opera{Name="Cosi fan tutte", Language="Italian", PremierDate=DateTime.Parse("01/26/1790")},
-                new Opera{Name="Don Giovanni", Language="Italian", PremierDate=DateTime.Parse("10/29/1786")},
-                new Opera{Name="Die Zauberflöte", Language="German", PremierDate=DateTime.Parse("09/30/1791")},
-                new Opera{Name="Fidelio", Language="German", PremierDate=DateTime.Parse("11/20/1805")},
-                new Opera{Name="Il barbiere di Siviglia", Language="Italian", PremierDate=DateTime.Parse("02/20/1816")},
-                new Opera{Name="La Cenerentola", Language="Italian", PremierDate=DateTime.Parse("01/25/1817")},
-                new Opera{Name="Lohengrin", Language="German", PremierDate=DateTime.Parse("08/28/1850")},
-                new Opera{Name="Die Meistersinger von Nüremberg", Language="German", PremierDate=DateTime.Parse("11/02/1862")},
-                new Opera{Name="Parsifal", Language="German", PremierDate=DateTime.Parse("07/26/1882")},
-                new Opera{Name="Rigoletto", Language="Italian", PremierDate=DateTime.Parse("03/11/1851")},
-                new Opera{Name="La Traviata", Language="Italian", PremierDate=DateTime.Parse("03/06/1853")},
-                new Opera{Name="Aida", Language="Italian", PremierDate=DateTime.Parse("12/24/1871")},
+                new Opera{Name="Le nozze di Figaro", ComposerID= 1, Language="Italian", PremierDate=DateTime.Parse("05/01/1786")},
+                new Opera{Name="Cosi fan tutte", ComposerID= 1, Language="Italian", PremierDate=DateTime.Parse("01/26/1790")},
+                new Opera{Name="Don Giovanni", ComposerID= 1, Language="Italian", PremierDate=DateTime.Parse("10/29/1786")},
+                new Opera{Name="Die Zauberflöte", ComposerID= 1, Language="German", PremierDate=DateTime.Parse("09/30/1791")},
+                new Opera{Name="Fidelio", ComposerID= 2, Language="German", PremierDate=DateTime.Parse("11/20/1805")},
+                new Opera{Name="Il barbiere di Siviglia", ComposerID= 3, Language="Italian", PremierDate=DateTime.Parse("02/20/1816")},
+                new Opera{Name="La Cenerentola", ComposerID= 3, Language="Italian", PremierDate=DateTime.Parse("01/25/1817")},
+                new Opera{Name="Lohengrin", ComposerID= 4, Language="German", PremierDate=DateTime.Parse("08/28/1850")},
+                new Opera{Name="Die Meistersinger von Nüremberg", ComposerID= 4, Language="German", PremierDate=DateTime.Parse("11/02/1862")},
+                new Opera{Name="Parsifal", ComposerID= 4, Language="German", PremierDate=DateTime.Parse("07/26/1882")},
+                new Opera{Name="Rigoletto", ComposerID= 5, Language="Italian", PremierDate=DateTime.Parse("03/11/1851")},
+                new Opera{Name="La Traviata", ComposerID= 5, Language="Italian", PremierDate=DateTime.Parse("03/06/1853")},
+                new Opera{Name="Aida", ComposerID= 5, Language="Italian", PremierDate=DateTime.Parse("12/24/1871")},
             };
             operas.ForEach(s => context.Operas.Add(s));
             context.SaveChanges();

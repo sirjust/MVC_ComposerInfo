@@ -156,7 +156,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ComposerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OperasController.cs" />
     <Compile Include="DAL\MusicContext.cs" />
     <Compile Include="DAL\MusicInitializer.cs" />
     <Compile Include="Global.asax.cs">
@@ -243,6 +245,16 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Composer\Create.cshtml" />
+    <Content Include="Views\Composer\Delete.cshtml" />
+    <Content Include="Views\Composer\Details.cshtml" />
+    <Content Include="Views\Composer\Edit.cshtml" />
+    <Content Include="Views\Composer\Index.cshtml" />
+    <Content Include="Views\Operas\Create.cshtml" />
+    <Content Include="Views\Operas\Delete.cshtml" />
+    <Content Include="Views\Operas\Details.cshtml" />
+    <Content Include="Views\Operas\Edit.cshtml" />
+    <Content Include="Views\Operas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
